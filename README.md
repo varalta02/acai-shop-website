@@ -3,7 +3,7 @@
 Interactive website developed for an açaí shop, focused on creating a dynamic and user-friendly ordering experience.
 
 ## 🌐 Live Demo
-https://SEU-LINK-AQUI
+https://varalta02.github.io/acai-shop-website/
 
 ## 💻 Technologies
 - HTML5
