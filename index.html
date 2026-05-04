@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Açaí do Ruivo — self-service liberado, sem balança, em Juiz de Fora." />
+  <title>Açaí do Ruivo | Self-service liberado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Ultra&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo-ruivo.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a href="#home" class="brand" aria-label="Açaí do Ruivo - início">
+      <img src="assets/logo-ruivo.png">
+      <span class="brand-text">Açaí do Ruivo</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#sobre">História</a>
+      <a href="#montar">Pedido</a>
+      <a href="#montar">Monte o seu</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="#montar" class="header-cta">Pedir agora</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="features-bar">
+        <div>🍓 Frutas à vontade</div>
+        <div>⚡ Sem balança</div>
+        <div>🧠 Você decide</div>
+      </div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">desde junho/2025 • granjas betânia</p>
+        <h1>O açaí que você monta sem medo da balança.</h1>
+        <p class="hero-text">Escolha o tamanho, se sirva à vontade e pague só pelo copo. Um modelo diferente em Juiz de Fora: acessível, caprichado e feito pra você montar do seu jeito.</p>
+        <div class="hero-actions">
+          <a href="#montar" class="btn btn-primary">Montar meu pedido</a>
+          <a href="#montar" class="btn btn-ghost">Ver tamanhos</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="120">
+        <div class="cup-card floating logo-card">
+          <div class="sunburst"></div>
+          <img src="assets/logo-ruivo.png" alt="Açaí do Ruivo">
+          <div class="stamp">sem balança</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="section-grid">
+        <div class="about-card reveal">
+          <p class="eyebrow purple">nossa história</p>
+          <h2>Uma açaiteria local com mentalidade de marca grande.</h2>
+          <p>O Açaí do Ruivo nasceu do desejo de trabalhar com gastronomia atendendo pessoas com algo acessível, de qualidade e em um modelo pouco comum em Juiz de Fora.</p>
+          <p>Aqui o cliente pode se servir à vontade, sem pagar nada a mais por isso. Você escolhe o tamanho, monta do seu jeito e aproveita sem surpresa no caixa.</p>
+        </div>
+
+        <div class="stats reveal" data-delay="120">
+          <div><strong>0</strong><span>balança</span></div>
+          <div><strong>∞</strong><span>complementos</span></div>
+          <div><strong>JF</strong><span>feito na cidade</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-zigzag" aria-hidden="true"></div>
+
+    <section class="feature-band reveal">
+      <div class="feature-text">
+        <h2>Complementos liberados. Vontade liberada.</h2>
+        <p>Leite em pó, paçoca, granola, frutas, coberturas e muito mais pra você montar seu copo do seu jeito.</p>
+      </div>
+      <div class="ingredient-cloud" id="ingredientCloud"></div>
+    </section>
+
+    <section class="section builder" id="montar">
+      <div class="section-heading reveal">
+        <p class="eyebrow">pedido</p>
+        <h2>Monte seu pedido</h2>
+        <p>Adicione produtos ao carrinho, escolha complementos e mande direto no WhatsApp.</p>
+      </div>
+
+      <div class="builder-layout">
+        <form class="builder-panel reveal" id="orderForm">
+        <div class="builder-section">
+          <h3>Escolha seu copo</h3>
+
+          <div class="cup-options">
+            <button type="button" class="cup-option" data-size="200ml" data-price="10">
+              200 ml
+              <span>R$ 10</span>
+            </button>
+
+            <button type="button" class="cup-option" data-size="300ml" data-price="12">
+              300 ml
+              <span>R$ 12</span>
+            </button>
+
+            <button type="button" class="cup-option" data-size="400ml" data-price="14">
+              400 ml
+              <span>R$ 14</span>
+            </button>
+
+            <button type="button" class="cup-option" data-size="500ml" data-price="17">
+              500 ml
+              <span>R$ 17</span>
+            </button>
+
+            <button type="button" class="cup-option" data-size="750ml" data-price="25">
+              750 ml
+              <span>R$ 25</span>
+            </button>
+
+            <button type="button" class="cup-option" data-size="1 litro" data-price="32">
+              1 L
+              <span>R$ 32</span>
+            </button>
+          </div>
+        </div>
+          <h3>Complementos inclusos</h3>
+          <div class="check-grid" id="freeAddons"></div>
+
+          <h3>Premium futuramente <span>+ R$3 cada</span></h3>
+          <div class="check-grid premium" id="premiumAddons"></div>
+
+          <h3>Coberturas</h3>
+          <div class="check-grid" id="syrups"></div>
+
+          <h3>Frutas</h3>
+          <div class="check-grid" id="fruits"></div>
+
+          <label class="input-label" for="customerName">Seu nome</label>
+          <input id="customerName" type="text" placeholder="Ex: João" />
+
+          <label class="input-label" for="orderNotes">Observações</label>
+          <textarea id="orderNotes" rows="4" placeholder="Ex: sem banana, capricha no leite condensado..."></textarea>
+        </form>
+
+        <aside class="cart-panel reveal" data-delay="120">
+          <div class="cart-header">
+            <h3>Seu pedido</h3>
+            <button id="clearCart" type="button">limpar</button>
+          </div>
+          <div id="cartItems" class="cart-items empty">Seu carrinho está vazio.</div>
+          <div class="cart-total">
+            <span>Subtotal</span>
+            <strong id="subtotal">R$ 0,00</strong>
+          </div>
+          <a href="#delivery" class="btn btn-primary full">Calcular entrega</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="delivery" id="delivery">
+      <div class="ticker-bottom">
+        <div class="ticker-track">
+          <span>• DELIVERY OU RETIRADA • PEÇA SEU AÇAÍ • DELIVERY OU RETIRADA • PEÇA SEU AÇAÍ • DELIVERY OU RETIRADA • PEÇA SEU AÇAÍ </span>
+          <span>• DELIVERY OU RETIRADA • PEÇA SEU AÇAÍ • DELIVERY OU RETIRADA • PEÇA SEU AÇAÍ • DELIVERY OU RETIRADA • PEÇA SEU AÇAÍ </span>
+        </div>
+      </div>
+      <div class="delivery-card reveal">
+        <div>
+          <p class="eyebrow">delivery</p>
+          <h2>Calcule produto + entrega</h2>
+          <p>Digite seu endereço em Juiz de Fora. O site tenta calcular a distância automaticamente. Se não encontrar, você pode informar a distância manualmente.</p>
+        </div>
+
+        <div class="delivery-form">
+          <label class="input-label" for="address">Endereço de entrega</label>
+          <input id="address" type="text" placeholder="Ex: Rua Halfeld, 500, Juiz de Fora" />
+
+          <div class="two-cols">
+            <div>
+              <label class="input-label" for="manualKm">Distância manual (km)</label>
+              <input id="manualKm" type="number" min="0" step="0.1" placeholder="Ex: 4.5" />
+            </div>
+            <button id="calcDelivery" type="button" class="btn btn-primary">Calcular</button>
+          </div>
+
+          <div class="delivery-result" id="deliveryResult">
+            Loja: Av. Juiz de Fora, 445 — Granjas Betânia, Juiz de Fora.
+          </div>
+
+          <button id="whatsappBtn" type="button" class="btn btn-whatsapp full">Enviar pedido no WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vibe-section">
+      <div class="vibe-content reveal">
+        <p class="eyebrow">AÇAÍ DO RUIVO</p>
+
+        <h2>Feito pra quem chega, monta e fica.</h2>
+
+        <p>
+          Mais que açaí, um ponto de encontro.
+          Sem balança, sem complicação, do seu jeito.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div>
+      <h2>Açaí do Ruivo</h2>
+      <p>Av. Juiz de Fora, 445 — Granjas Betânia, Juiz de Fora</p>
+      <p>Aberto desde junho/2025.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Início</a>
+      <a href="#montar">Pedido</a>
+      <a href="#delivery">Delivery</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
